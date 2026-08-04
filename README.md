@@ -47,3 +47,12 @@ GROUP BY Shipping_Mode
 ORDER BY Late_Delivery_Rate_Pct DESC;
 ![Logistics & Operations](Screenshot (292).png)
 
+SELECT 
+    Product_Name,
+    COUNT(Order_Id) AS Total_Orders,
+    ROUND(SUM(Sales), 2) AS Total_Revenue,
+    ROUND(SUM(Order_Profit_Per_Order), 2) AS Net_Profit
+FROM dataco_supply_chain
+GROUP BY Product_Name
+HAVING SUM(Order_Profit_Per_Order) < 0
+ORDER BY Net_Profit ASC;
