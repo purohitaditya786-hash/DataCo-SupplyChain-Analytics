@@ -188,7 +188,7 @@ Deep dive into shipping delays, late delivery rate trends, top delayed cities, a
 ### Page 3: Product Performance & Profitability
 Item-level profit analysis, discount impact tracking, zero-demand stock isolation, and loss-making order identification.
 
-<img src="Screenshot (296).png" width="100%">
+<img src="Screenshot (307).png" width="100%">
 
 
 
