@@ -174,14 +174,14 @@ Below are the executive previews of the 3-page interactive Power BI report:
 ### Page 1: Executive Overview
 High-level operational metrics covering global sales distribution, order fulfillment status, and regional revenue growth.
 
-<img src="Screenshot (292).png" width="100%">
+<img src="Screenshot (294).png" width="100%">
 
 <br>
 
 ### Page 2: Logistics & Operations
 Deep dive into shipping delays, late delivery rate trends, top delayed cities, and total shipping loss metrics.
 
-<img src="Screenshot (294).png" width="100%">
+<img src="Screenshot (292).png" width="100%">
 
 <br>
 
