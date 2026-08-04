@@ -46,8 +46,8 @@ FROM dataco_supply_chain
 GROUP BY Shipping_Mode
 ORDER BY Late_Delivery_Rate_Pct DESC;
 
-### 2. Loss-Bleeding Products Filter
-```sql
+2. Loss-Bleeding Products Filter
+SQL
 SELECT 
     Product_Name,
     COUNT(Order_Id) AS Total_Orders,
@@ -58,8 +58,8 @@ GROUP BY Product_Name
 HAVING SUM(Order_Profit_Per_Order) < 0
 ORDER BY Net_Profit ASC;
 
-### 3. Top Delayed Cities Identification
-```sql
+3. Top Delayed Cities Identification
+SQL
 SELECT 
     Order_City,
     Market,
@@ -70,8 +70,8 @@ GROUP BY Order_City, Market
 ORDER BY Total_Delayed_Orders DESC
 LIMIT 10;
 
-### 4. Yearly Sales & Profit Trend
-```sql
+4. Yearly Sales & Profit Trend
+SQL
 SELECT 
     YEAR(order_date) AS Order_Year,
     COUNT(DISTINCT Order_Id) AS Total_Orders,
@@ -80,5 +80,7 @@ SELECT
 FROM dataco_supply_chain
 GROUP BY YEAR(order_date)
 ORDER BY Order_Year ASC;
+
+
 
 
