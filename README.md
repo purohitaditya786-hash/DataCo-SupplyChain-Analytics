@@ -47,7 +47,7 @@ GROUP BY Shipping_Mode
 ORDER BY Late_Delivery_Rate_Pct DESC;
 ![Logistics & Operations](Screenshot (292).png)
 
-### 2. Loss-Bleeding Products Filter
+**### 2. Loss-Bleeding Products Filter**
 SQL
 SELECT 
     Product_Name,
