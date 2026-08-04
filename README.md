@@ -30,7 +30,7 @@ The Power BI report is structured into 3 interactive pages following an executiv
 
 ---
 
-## 🔍 SQL Analysis Highlights
+##  SQL Analysis Highlights
 Key analytical queries written to extract actionable business metrics directly from the dataset:
 
 ### 1. Late Delivery Rate & Loss by Shipping Mode
