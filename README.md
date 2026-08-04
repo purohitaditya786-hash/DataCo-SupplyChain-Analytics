@@ -34,9 +34,8 @@ The Power BI report is structured into 3 interactive pages following an executiv
 
 Key analytical queries written to extract actionable business metrics directly from the dataset:
 
--- ===================================================
--- ### 1. Late Delivery Rate & Loss by Shipping Mode
--- ===================================================
+### 1. Late Delivery Rate & Loss by Shipping Mode
+
 SELECT 
     Shipping_Mode,
     COUNT(Order_Id) AS Total_Orders,
@@ -47,10 +46,8 @@ FROM dataco_supply_chain
 GROUP BY Shipping_Mode
 ORDER BY Late_Delivery_Rate_Pct DESC;
 
+### 2. Loss-Bleeding Products Filter
 
--- ===================================================
--- ### 2. Loss-Bleeding Products Filter
--- ===================================================
 SELECT 
     Product_Name,
     COUNT(Order_Id) AS Total_Orders,
@@ -61,10 +58,8 @@ GROUP BY Product_Name
 HAVING SUM(Order_Profit_Per_Order) < 0
 ORDER BY Net_Profit ASC;
 
+### 3. Top Delayed Cities Identification
 
--- ===================================================
--- ### 3. Top Delayed Cities Identification
--- ===================================================
 SELECT 
     Order_City,
     Market,
@@ -75,10 +70,8 @@ GROUP BY Order_City, Market
 ORDER BY Total_Delayed_Orders DESC
 LIMIT 10;
 
+### 4. Yearly Sales & Profit Trend
 
--- ===================================================
--- ### 4. Yearly Sales & Profit Trend
--- ===================================================
 SELECT 
     YEAR(order_date) AS Order_Year,
     COUNT(DISTINCT Order_Id) AS Total_Orders,
