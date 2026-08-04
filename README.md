@@ -165,9 +165,8 @@ GROUP BY Customer_Id, Customer_City
 HAVING COUNT(DISTINCT Order_Id) > 5
 ORDER BY Lifetime_Value DESC
 LIMIT 10;
-
+```
 ---
-
 ## Dashboard Preview & Page Breakdown
 
 Below are the executive previews of the 3-page interactive Power BI report:
