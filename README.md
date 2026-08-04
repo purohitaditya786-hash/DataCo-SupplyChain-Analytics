@@ -166,6 +166,31 @@ HAVING COUNT(DISTINCT Order_Id) > 5
 ORDER BY Lifetime_Value DESC
 LIMIT 10;
 
+---
+
+## Dashboard Preview & Page Breakdown
+
+Below are the executive previews of the 3-page interactive Power BI report:
+
+### Page 1: Executive Overview
+High-level operational metrics covering global sales distribution, order fulfillment status, and regional revenue growth.
+
+<img src="Screenshot (292).png" width="100%">
+
+<br>
+
+### Page 2: Logistics & Operations
+Deep dive into shipping delays, late delivery rate trends, top delayed cities, and total shipping loss metrics.
+
+<img src="Screenshot (294).png" width="100%">
+
+<br>
+
+### Page 3: Product Performance & Profitability
+Item-level profit analysis, discount impact tracking, zero-demand stock isolation, and loss-making order identification.
+
+<img src="Screenshot (296).png" width="100%">
+
 
 
 
